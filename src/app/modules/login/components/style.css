@@ -1,0 +1,72 @@
+.profile-img-card { width: 96px; height: 96px; margin: 0 auto 10px; display: block; border-radius: 50%; }
+.card-container { max-width: 350px; padding: 40px 40px;
+    background-color: #F7F7F7;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn.btn-signin {
+    background-color: rgb(104, 145, 162);
+}
+
+.btn.facebook { 
+    background-color: #3b5998; 
+    border-color: #293a5e;
+}
+
+.btn.btn-signin, .btn.facebook, .btn.googleplus {
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    border-radius: 3px;
+    border: none;
+    transition: all 0.218s;
+    cursor: pointer;
+}
+
+.btn.btn-signin:hover, .btn.btn-signin:active, .btn.btn-primary.btn-signin:focus {
+    background-color: rgb(255,102,0);
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: rgb(255,102,0);
+}
+
+.btn.btn-signin:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.signup-form-container {  margin-top: 30px; }
+.signup-form-container .row { margin-bottom: 10px; }
+
+.expand input.test { padding: 10px; border: none; }
+
+.expand { position: relative; }
+
+.expand input.form-control { border: none; background-color: transparent !important; box-shadow: none; border-radius: 0px !important; }
+.help-block { font-weight: 300; font-size: 14px; color: #f00; display: block; -webkit-animation: fadeIn 1s; animation: fadeIn 1s; }
+
+.lined-border {
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 100%;
+  background: #ff6600;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  /* transform-origin:  0% 50%; */
+}
+
+input.test:focus, .expand input:focus, .expand input:active { outline: none; }
+
+input.test:focus + .lined-border, .expand:focus .lined-border, .form-control:focus + .lined-border {
+  transform: scaleX(1);
+}

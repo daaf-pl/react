@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ReactRoot { height: 300px; }
+.ReactRoot > div { height: 100%; }
+.PageLoaderView.show { opacity: 1; visibility: visible; }
+.PageLoaderView.show .LoaderView { opacity: 1; visibility: visible; }
+.PageLoaderView { opacity: 0; visibility: hidden; transition: all .2s ease-in; position: relative; background-color: rgba(255, 255, 255, 1); height: 100vh; width: 100%; position: fixed; left: 0; top: 0; z-index: 9999; }
+.PageLoaderView .LoaderView { left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.LoaderView { color: #3d61ad; text-indent: -9999rem; position: relative; font-size: 11px; transform: translateZ(0); animation-delay: -0.16s; }
+.LoaderView, .LoaderView:before, .LoaderView:after { background: #3d61ad; animation: load1 1s infinite ease-in-out; width: 1rem; height: 4rem; }
+.LoaderView { opacity: 0; visibility: hidden; transition: all .2s ease-in; }
+.LoaderView:before { left: -1.5rem; animation-delay: -0.32s; }
+.LoaderView:before, .LoaderView:after { position: absolute; top: 0; content: ''; }
+.LoaderView:after { left: 1.5rem; }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 90px !important;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+.spinner div { height: 100%; width: 7px; margin: 0 3px 0 0; background-color: #fff; display: inline-block; -webkit-animation: stretchdelay 1.2s infinite ease-in-out; animation: stretchdelay 1.2s infinite ease-in-out; }
+.spinner { width: 60px; height: 60px; position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 60px;
+    right: 0;
+    margin: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .spinner > div {
+	background-color: #101b2d;
+	height: 100%;
+	width: 6px;
+	display: inline-block;
+	
+	-webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+	animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+	-webkit-animation-delay: -1.1s;
+	animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+	-webkit-animation-delay: -0.9s;
+	animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+	-webkit-animation-delay: -0.8s;
+	animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+	0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+	20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+	0%, 40%, 100% { 
+	  transform: scaleY(0.4);
+	  -webkit-transform: scaleY(0.4);
+	}  20% { 
+	  transform: scaleY(1.0);
+	  -webkit-transform: scaleY(1.0);
+	}
+  }
