@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Add manifest -->
+  <!-- <script src="%PUBLIC_URL%/main.js"></script>
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.webmanifest"> -->
+  <!-- Tell the browser it's a PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- Tell iOS it's a PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="" />
+  <meta name="robots" content="index, follow" />
+  <!-- <link rel="canonical" href="http://localhost:3001/" /> -->
+  <link rel="canonical" href="https://pwa.4client.com.pl/" />
+  <!-- Make sure theme-color is defined -->
+  <meta name="theme-color" content="#536878">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <title>Jedziemy</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=latin-ext" rel="stylesheet" />
+  <!-- Add in some basic styles for our HTML -->
+  <style type="text/css">
+    body { margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
+
+    .App {
+      text-align: center;
+    }
+
+    .App-header {
+      background-color: #222;
+      height: 150px;
+      padding: 20px;
+      color: white;
+    }
+
+    .App-header h2 { font-size: 40px; font-weight: 400; padding: 17px 0; }
+    .orange-daaf { color: #ff6600; }
+    .gray-daaf { color: #808080; }
+
+    .pulse { width: 32px; height: 32px; margin: 20px auto 20px; background-color: #303030;-webkit-animation: scaleout 1.0s infinite ease-in-out; animation: scaleout 1.0s infinite ease-in-out; -webkit-border-radius: 16px; -moz-border-radius: 16px; -ms-border-radius: 16px; -o-border-radius: 16px; border-radius: 16px; }
+    @-webkit-keyframes scaleout{0%{-webkit-transform:scale(0)}100%{-webkit-transform:scale(1);opacity:0}}
+    @-moz-keyframes scaleout{0%{-moz-transform:scale(0)}100%{-moz-transform:scale(1);opacity:0}}
+    @-ms-keyframes scaleout{0%{-ms-transform:scale(0)}100%{-ms-transform:scale(1);opacity:0}}
+    @-o-keyframes scaleout{0%{-o-transform:scale(0)}100%{-o-transform:scale(1);opacity:0}}
+    @keyframes scaleout{0%{transform:scale(0);-webkit-transform:scale(0)}100%{transform:scale(1);-webkit-transform:scale(1);opacity:0}}
+
+    .App-intro {
+      font-size: large;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Filler HTML as our app starts up -->
+  <div id="root">
+    <div class="App">
+      <div class="App-header">
+        <h2><span class="orange-daaf">D</span><span class="gray-daaf">aa</span><span class="orange-daaf">f</span></h2>
+      </div>
+      <div class="pulse"></div>
+      <p class="App-intro">
+        Ładowanie strony...
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

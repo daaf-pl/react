@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Add manifest -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <!-- Tell the browser it's a PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- Tell iOS it's a PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Tryb Offline" />
+  <!-- Make sure theme-color is defined -->
+  <meta name="theme-color" content="#536878">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <title>React App</title>
+  <!-- Add in some basic styles for our HTML -->
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .App {
+      text-align: center;
+    }
+
+    .App-header {
+      background-color: #222;
+      height: 150px;
+      padding: 20px;
+      color: white;
+    }
+
+    .App-header h1 { font-size: 40px; font-weight: 400; padding: 17px 0; }
+    .orange-daaf { color: #ff6600; }
+    .gray-daaf { color: #808080; }
+
+    .App-intro {
+      font-size: large;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Filler HTML as our app starts up -->
+  <div id="root">
+    <div class="App">
+      <div class="App-header">
+        <h1><span class="orange-daaf">D</span><span class="gray-daaf">aa</span><span class="orange-daaf">f</span></h1>
+      </div>
+      <p class="App-intro">
+        Jesteś Offline...
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
