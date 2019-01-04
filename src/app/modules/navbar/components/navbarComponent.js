@@ -46,7 +46,7 @@ export default class Navbar extends Component {
                                         <NavLink className="nav-link" to="/">Strona główna <span className="sr-only">(current)</span></NavLink>
                                     </li>
                                     <li className="nav-item dropdown">
-                                        <NavLink className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Różne duperele" to="#">Różne</NavLink>
+                                        <div className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Różne">Różne</div>
                                         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                             <NavLink className="dropdown-item" activeClassName="active" to="/blog">Artykuły</NavLink>
                                             <NavLink className="dropdown-item" activeClassName="active" to="/change-state">Zmiana State</NavLink>
